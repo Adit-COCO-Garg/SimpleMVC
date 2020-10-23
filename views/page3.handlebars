@@ -13,7 +13,7 @@
   <h1>Welcome to page 3</h1>
   
   <!-- links or URLs are always GET resources as they are getting (retrieving) a resource -->
-  <nav>
+  <nav class="navbar navbar-light bg-light">
     <a href="/">Home</a>
     <a href="/page1">Page 1</a>
     <a href="/page2">Page 2</a>
@@ -24,14 +24,21 @@
   <form action="/setName" method="POST">
   <fieldset>
     <legend>Create your dogo</legend>
-
-    <label for="Name">Name</label>
-    <input type="text" name="Name" value="">
-    <label for="Age">Age</label>
-    <input type="number" name="Age" value="">
-    <label for="Breed">Breed</label>
-    <input type="text" name="Breed" value="">
-    <input type="submit" value="submit">
+    <div class="form-group">
+      <label for="Name">Name</label>
+      <input type="text" name="Name" value="">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="Age">Age</label>
+      <input type="number" name="Age" value="">
+    </div>
+    <div class="form-group">
+      <label for="Breed">Breed</label>
+      <input type="text" name="Breed" value="">
+      
+    </div>
+    <input class="btn btn-primary" type="submit" value="submit">
+    
   </fieldset>
 
   </form>
@@ -50,7 +57,7 @@
   <form action="findByName" method="GET">
     <label for="name">Name to search for:</label>
     <input type="text" name="name" value="">
-    <input type="submit" value="Submit">
+    <input type="submit" class="btn btn-outline-success my-2 my-sm-0" value="Submit">
   </form>
 
 </body>
