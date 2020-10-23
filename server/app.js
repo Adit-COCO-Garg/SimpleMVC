@@ -16,7 +16,7 @@ const mongoose = require('mongoose');
 // express handlebars is an express plugin for handlebars templating
 const expressHandlebars = require('express-handlebars');
 
-// import our router.js file to handle the MVC routes
+// import our router.js file to handle the MVC route
 // In MVC, you have 'routes' that line up URLs to controller methods
 const router = require('./router.js');
 
